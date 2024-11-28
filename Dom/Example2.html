@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightgreen;
+        }
+        div{
+            margin: 100px auto;
+            box-shadow: 0px 0px 10px black;
+            padding: 50px;
+            text-align: center;
+            width: 500px;
+            background-color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Show/Hide Password</h2>
+    <input id="password" type="password" name="password">
+        <button id="btn" onclick="ShowPassword()">Show password</button>
+    </div> 
+    <script>
+        function ShowPassword(){
+           let inputref=document.getElementById('password')
+          let btnref=document.getElementById('btn')
+          if(inputref.type =="password"){
+                 inputref.type="text"
+                 btnref.innerHTML="Hide password"
+          }
+          else{
+             inputref.type="password"
+             btnref.innerHTML="Show password"
+          }
+        }
+    </script>
+</body>
+</html>

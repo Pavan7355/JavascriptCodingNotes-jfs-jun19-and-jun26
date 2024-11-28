@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 300px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- onmouseover and onmouseout -->
+     <!-- these are the events related to mouse move activity -->
+<!-- mouseover:  when we take the mouse cursor on any elements
+it gets triggered -->
+<!-- mouseout: when we take out the cursor from any web
+elements it will get triggered -->
+<div class="box" id="box" onmouseover="MouseOver()"
+onmouseout="MouseOut()"></div>
+<script>
+    function MouseOver(){
+ let divref=document.getElementById('box') 
+ divref.style.backgroundColor="red"   
+    }
+    function MouseOut(){
+ let divref=document.getElementById('box') 
+ divref.style.backgroundColor="yellow"   
+    }
+</script>
+</body>
+</html>

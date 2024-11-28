@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus earum, quod corporis, sapiente deserunt pariatur tempore cum minima aliquid velit repudiandae corrupti omnis magni, tempora dolore nemo laborum laboriosam animi!</p>
+    <script>
+        //document.createElement()
+        //we can create web elements dynamically using
+        //createElement()
+        //in order to dynamically append created element
+        //to webpage we can take help of appen()/appendchild()
+      let h1ref=document.createElement('h1')
+      h1ref.innerHTML="Welcome to js class"
+
+      let body=document.body
+      body.appendChild(h1ref)
+
+      let btnref=document.createElement('button')
+      btnref.textContent="click here"
+      body.appendChild(btnref)
+
+      let pref=document.createElement('p')
+      pref.innerHTML="welcome to pentagonspace"
+       body.appendChild(pref)
+//remove()
+//by using remove method we can remove the web elements dynamically
+//form html html document
+
+let pararef=document.getElementById('para')
+pararef.remove()
+btnref.remove()
+</script>
+</body>
+</html>

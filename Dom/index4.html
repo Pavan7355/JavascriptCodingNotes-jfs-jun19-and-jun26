@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Welcome to Pentagonspace</h1>
+    <h1 class="one">Welcome to js class</h1>
+    <p class="two">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo at dignissimos fugiat sapiente officia alias perspiciatis officiis aliquam pariatur. Odit, et sit fuga aut consequuntur commodi ipsum vero ex facilis!</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure dolorem odit iusto consectetur voluptatum doloribus voluptates velit quaerat architecto laudantium blanditiis accusantium tempora tempore vero esse, sit dolorum illum dolores.</p>
+<p class="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero id molestias, reiciendis laborum suscipit neque praesentium voluptate quasi esse consequuntur aperiam quibusdam nisi distinctio, voluptatem recusandae? At consequatur accusamus inventore?</p>
+<button onclick="change()">Click to change style</button>
+<script>
+    function change(){
+        let h1ref=document.getElementById('heading')
+h1ref.style.color="red"
+h1ref.style.textAlign="center"
+h1ref.style.border="5px solid green"
+h1ref.style.backgroundColor="yellow"
+
+var pref=document.getElementsByClassName('two')
+console.log(pref)
+pref[1].style.color="white"
+pref[1].style.backgroundColor="black"
+    }
+</script>
+</body>
+</html>

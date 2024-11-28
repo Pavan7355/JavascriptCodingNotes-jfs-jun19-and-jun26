@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        div{
+            text-align: center;
+            margin: 80px auto;
+        }
+        button{
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <img id="image" src="https://w7.pngwing.com/pngs/79/518/png-transparent-js-react-js-logo-react-react-native-logos-icon-thumbnail.png" 
+    width="300" height="300">
+    <br><br>
+    <button onclick="ChangeImageReact()">React</button>
+    <button onclick="ChangeImageAngular()">Angular</button>
+</div>
+<script>
+    function ChangeImageAngular(){
+      let imgref=document.getElementById('image')
+      imgref.src="https://www.shutterstock.com/image-vector/angular-emblem-white-letter-on-600w-1937611372.jpg"
+    }
+    function ChangeImageReact(){
+       let imgref=document.getElementById('image')
+       imgref.src="https://w7.pngwing.com/pngs/79/518/png-transparent-js-react-js-logo-react-react-native-logos-icon-thumbnail.png"
+    }
+</script>
+</body>
+</html>

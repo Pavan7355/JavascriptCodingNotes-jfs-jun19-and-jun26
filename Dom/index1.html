@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+  <h1 id="one">Welcome to pentagonspace</h1> 
+  <button onclick="change()">Click here</button> 
+  <button>Change prev</button>
+  <h3 id="two"></h3>
+  <h3 id="three"></h3>
+  <script>
+    //5.document.getElementById()
+    //by using this method we can access html 
+    //elements inside the js
+
+// let h1ref=document.getElementById('one')
+// console.log(h1ref)
+
+// let h3ref=document.getElementById('two')
+// h3ref.innerHTML="Welcome to js class"
+// function change(){  
+// let h1ref=document.getElementById('one')
+//   h1ref.textContent="Thank you for visiting"
+// }
+  //differnce b/w innerHTML and textContent
+//inerHTML--->if we have any html tags present while using
+//inner html then inner html property recogines
+//the html tags
+var h3ref=document.getElementById('two')
+h3ref.innerHTML="<i>welcome to js class</i>"
+ //textContent-->if we have any html tags present while using
+ //textContent will not recgonies and it will print html
+ //tags as it is 
+ let h3ref1=document.getElementById('three')
+ h3ref1.textContent="<i>welcome to js class</i>"
+  </script>
+</body>
+</html>

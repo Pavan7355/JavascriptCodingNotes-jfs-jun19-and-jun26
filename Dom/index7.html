@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input id="input">
+    <input type="radio" id="one">option1
+    <img id="two" src="https://images.hdqwalls.com/wallpapers/lamborghini-revuelto-2024-8b.jpg">
+    <script>
+        //setAttribute()
+        //the setAttribute(name,value)
+        //method used to set a new attribute  or
+        //change the attribute value of exisitng attribute
+        //om an html element
+       let inputref=document.getElementById('input')
+    inputref.setAttribute('type',"number")
+    let inputref1=document.getElementById('one')
+    inputref1.setAttribute('type','checkbox')
+
+    let aref=document.createElement('a')
+    aref.innerHTML="Youtube"
+    aref.setAttribute('href',"https://www.youtube.com")
+    let body=document.body
+    body.appendChild(aref)
+
+    //getAttribute()
+    //the getAttribute(name) method retrives the 
+    //value of a specified attribute from an html element
+    let ref1=document.getElementById('one')
+    let res=ref1.getAttribute('type')
+    console.log(res)
+
+   let imgref=document.getElementById('two')
+   let result= imgref.getAttribute('src')
+   console.log(result)
+   </script>
+</body>
+</html>

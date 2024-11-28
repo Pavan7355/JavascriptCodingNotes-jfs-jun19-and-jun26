@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Adding events through javascript -->
+     <!-- we can listen to the events through js by using
+     addEventListener()
+     addEventListener()  accepts 2 parameters
+     1.type of event ex: onclick ,onchange etc
+        'click' ,  'change'
+    2.callback function -->
+    <button id="btn">Submit</button>
+    <script>
+ let btnref= document.getElementById('btn')
+ btnref.addEventListener('click',()=>{
+    alert("button clicked")
+ })
+    </script>
+</body>
+</html>

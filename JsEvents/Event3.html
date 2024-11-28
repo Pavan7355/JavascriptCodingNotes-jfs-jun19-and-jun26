@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <!-- onkeydown -->
+     <!-- this event gets triggered when we type any key 
+     on the keyboard -->
+     <input type="text" onkeydown="Keypress(event)">
+     <script>
+        function Keypress(event){
+            console.log("key Pressed "+event.target.value)
+        }
+     </script>
+</body>
+</html>
